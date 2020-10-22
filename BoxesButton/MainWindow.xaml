@@ -1,0 +1,72 @@
+﻿<Window x:Class="BoxesButton.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BoxesButton"
+        mc:Ignorable="d"
+        Title="Ejemplos" Height="450" Width="800">
+    <Grid>
+        <!--Definición de Grid-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <!--ComboBox con 3 colores-->
+        <ComboBox Width="100" Height="50" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+            <ComboBoxItem  Name="R">
+                <TextBlock Text="Rojo"></TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem Name="Az">
+                <TextBlock Text="Azul" ></TextBlock>
+            </ComboBoxItem>
+            <ComboBoxItem Name="Am">
+                <TextBlock Text="Amarillo"></TextBlock>
+            </ComboBoxItem>
+        </ComboBox>
+
+        <!--Botones para utilizar o no utilizar colores-->
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Name="BtnUsar" Content="Usar" Click="BtnUsar_Click" Width="50" Height="30" HorizontalAlignment="Center" Margin="20"></Button>
+            <Button Name="BtnNoUsar" Content="No Usar" Click="BtnNoUsar_Click"  Width="50" Height="30" HorizontalAlignment="Center" Margin="20"></Button>
+        </StackPanel>
+
+
+        <!--CheckBox para colores seleccionados-->
+        <StackPanel Grid.Column="2" VerticalAlignment="Center">
+            <CheckBox Name="Rojo" Visibility="Hidden" Content="Rojo" Click="Rojo_Click"></CheckBox>
+            <CheckBox Name="Azul" Visibility="Hidden" Content="Azul" Click="Azul_Click"></CheckBox>
+            <CheckBox Name="Amarillo" Visibility="Hidden" Content="Amarillo" Click="Amarillo_Click"></CheckBox>
+        </StackPanel>
+
+        <!--Dependiendo de los valores marcados en CheckBox, se utilizará un color o varios-->
+        <Image Name="crojo" Source="D:\WPF\BoxesButton\BoxesButton\Assets\rojo.jpg" Grid.Row="1" Visibility="Hidden"/>
+        <Image Name="cazul" Source="D:\WPF\BoxesButton\BoxesButton\Assets\azul.jpg" Grid.Row="1" Grid.Column="1" Visibility="Hidden"/>
+        <Image Name="camarillo" Source="D:\WPF\BoxesButton\BoxesButton\Assets\amarillo.jpg" Grid.Row="1" Grid.Column="2" Visibility="Hidden"/>
+
+        <!--RadioButton para solo elegir una opcion-->
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center">
+            <Label>
+                <Bold>¿Qué escogerías?</Bold>
+            </Label>
+            <RadioButton GroupName="escoger" Name="f">Una fortuna</RadioButton>
+            <RadioButton GroupName="escoger" Name="m">Una mansión</RadioButton>
+            <RadioButton GroupName="escoger" Name="c">La caja</RadioButton>
+        </StackPanel>
+
+        <!--Boton que confirma la opción elegida-->
+        <Button Name="BtnConfirmar" Width="70" Height="30" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1" Click="BtnConfirmar_Click">Confirmar</Button>
+        
+        <!--Imagenes que aparecen cuando la opción final es elegida-->
+        <Image Name="ifo" Source="D:\WPF\BoxesButton\BoxesButton\Assets\fortuna.jpg" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Visibility="Hidden" Margin="10"></Image>
+        <Image Name="ima" Source="D:\WPF\BoxesButton\BoxesButton\Assets\mansion.jpg" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Visibility="Hidden" Margin="10"></Image>
+        <Image Name="ica" Source="D:\WPF\BoxesButton\BoxesButton\Assets\caja.jpg" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Visibility="Hidden" Margin="10"></Image>
+    </Grid>
+</Window>

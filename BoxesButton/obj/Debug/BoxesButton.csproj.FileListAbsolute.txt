@@ -1,0 +1,15 @@
+D:\WPF\BoxesButton\BoxesButton\bin\Debug\BoxesButton.exe.config
+D:\WPF\BoxesButton\BoxesButton\bin\Debug\BoxesButton.exe
+D:\WPF\BoxesButton\BoxesButton\bin\Debug\BoxesButton.pdb
+D:\WPF\BoxesButton\BoxesButton\obj\Debug\BoxesButton.csprojAssemblyReference.cache
+D:\WPF\BoxesButton\BoxesButton\obj\Debug\MainWindow.g.cs
+D:\WPF\BoxesButton\BoxesButton\obj\Debug\App.g.cs
+D:\WPF\BoxesButton\BoxesButton\obj\Debug\BoxesButton_MarkupCompile.cache
+D:\WPF\BoxesButton\BoxesButton\obj\Debug\BoxesButton_MarkupCompile.lref
+D:\WPF\BoxesButton\BoxesButton\obj\Debug\MainWindow.baml
+D:\WPF\BoxesButton\BoxesButton\obj\Debug\BoxesButton.g.resources
+D:\WPF\BoxesButton\BoxesButton\obj\Debug\BoxesButton.Properties.Resources.resources
+D:\WPF\BoxesButton\BoxesButton\obj\Debug\BoxesButton.csproj.GenerateResource.cache
+D:\WPF\BoxesButton\BoxesButton\obj\Debug\BoxesButton.csproj.CoreCompileInputs.cache
+D:\WPF\BoxesButton\BoxesButton\obj\Debug\BoxesButton.exe
+D:\WPF\BoxesButton\BoxesButton\obj\Debug\BoxesButton.pdb
